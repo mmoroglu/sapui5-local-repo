@@ -3,9 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 	return Controller.extend("SurveyApp.controller.View", {
-		
-		//deneme memo;
-		//web ide deneme git..
+        //web ide wsurvey branch
 		onPress: function() {
 			this._getDialog().open();
 		},
