@@ -5,7 +5,7 @@ sap.ui.define([
 	return Controller.extend("SurveyApp.controller.View", {
 		
 		//deneme memo;
-		
+		//web ide deneme git..
 		onPress: function() {
 			this._getDialog().open();
 		},
