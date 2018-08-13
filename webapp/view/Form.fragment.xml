@@ -1,0 +1,73 @@
+<core:FragmentDefinition 
+	controllerName="SurveyApp.controller.View" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+    <Dialog title="Anket">
+        <content>
+        	<Table
+        		id="questionsTable"
+        		items="{/questions}">
+				<columns>
+					<Column
+						minScreenWidth="Phone"
+						demandPopin="true"
+						hAlign="Center">
+						<header>
+							<Label text="Anket Sorusu" />
+						</header>
+					</Column>
+					<Column
+						minScreenWidth="Phone"
+						demandPopin="true"
+						hAlign="Center" >
+						<header>
+							<Label text="Ağırlık Katsayısı" />
+						</header>
+					</Column>
+					<Column
+						minScreenWidth="Phone"
+						demandPopin="true"
+						hAlign="Center" >
+						<header>
+							<Label text="Puan (0-10)" />
+						</header>
+					</Column>
+					<Column
+						minScreenWidth="Phone"
+						demandPopin="true"
+						hAlign="Center" >
+						<header>
+							<Label text="Sonuç (Puan * A.K)" />
+						</header>
+					</Column>
+				</columns>
+				<ColumnListItem
+					type="Active">
+					<cells>
+						<Text
+							text="{question}"/>
+						<Text
+							id="number"
+							text="{questionPoint}"/>
+						<ComboBox 
+							id="combobox"
+							selectionChange="onChange"
+							items="{/numbers}">
+							<items>
+								<core:Item key="{key}" app:country="{Country}" text="{text}" />
+							</items>
+						</ComboBox>
+						<Input id="result" value="{result}" enabled="false" maxLength="5"/>
+					</cells>
+				</ColumnListItem>
+			</Table>
+        </content>
+        <endButton>
+            <Button text="Close" press="onClose" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

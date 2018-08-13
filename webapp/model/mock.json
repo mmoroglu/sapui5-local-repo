@@ -1,0 +1,67 @@
+{
+    "questions": [{
+        "question": "Hizmet/Lisans/Danışman Kalitesi",
+        "questionPoint": "0.4",
+        "result": "0"
+    }, 
+    {
+        "question": "Teslim Süresine Uygunluk",
+        "questionPoint": "0.25",
+        "result": "0"        
+    }, 
+    {
+        "question": "Fiyat",
+        "questionPoint": "0.2",
+        "result": "0"        
+    },
+    {
+        "question": "İletişim Kolaylığı/Teknik Destek Sağlayabilme",
+        "questionPoint": "0.15",
+        "result": "0"        
+    }],
+    
+    "numbers": [{
+        "key": "0",
+        "text": 0
+    }, 
+    {
+        "key": "1",
+        "text": "1"
+    }, 
+    {
+        "key": "2",
+        "text": "2"
+    }, 
+    {
+        "key": "3",
+        "text": "3"
+    },
+    {
+        "key": "4",
+        "text": "4"
+    }, 
+    {
+        "key": "5",
+        "text": "5"
+    },
+    {
+        "key": "6",
+        "text": "6"
+    }, 
+    {
+        "key": "7",
+        "text": "7"
+    },
+    {
+        "key": "8",
+        "text": "8"
+    }, 
+    {
+        "key": "9",
+        "text": "9"
+    },
+    {
+        "key": "10",
+        "text": "10"
+    }]
+}
