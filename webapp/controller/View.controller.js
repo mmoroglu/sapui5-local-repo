@@ -2,11 +2,10 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller"
 ], function(Controller) {
 	"use strict";
-
-	var myVariable;
-
 	return Controller.extend("SurveyApp.controller.View", {
-
+		
+		//deneme memo;
+		
 		onPress: function() {
 			this._getDialog().open();
 		},
